@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hamza Ibrahim | Aspiring AI, Machine Learning, and Data Engineer</title>
+  <meta name="description" content="Portfolio of Hamza Ibrahim, a Computer Science and Artificial Intelligence student at Helwan University working on data engineering and machine learning projects with Python, SQL, TensorFlow, and scikit-learn.">
+  <meta name="author" content="Hamza Ibrahim El-Sayed">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070B16">
+
+  <!-- Open Graph / social previews. Add og:image and og:url after you publish the site. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hamza Ibrahim | Aspiring AI, Machine Learning, and Data Engineer">
+  <meta property="og:description" content="Computer Science and AI student building data pipelines and machine learning models. Projects in computer vision, ensemble learning, and data engineering.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hamza Ibrahim El-Sayed",
+    "jobTitle": "Computer Science and Artificial Intelligence student",
+    "email": "mailto:hamzaaaa12007@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Helwan University" },
+    "sameAs": [
+      "https://www.linkedin.com/in/hamzaaibrahiim",
+      "https://github.com/hamzaaaa-12"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Icon sprite: referenced with <use href="#icon-name"> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.921.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></symbol>
+      <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="icon-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Hamza Ibrahim, back to top">
+        <img src="assets/icons/favicon.svg" width="32" height="32" alt="">
+        <span>Hamza Ibrahim</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#certifications">Certifications</a></li>
+          <li><a class="nav__link" href="#education">Education</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__tools">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#icon-sun"/></svg>
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#icon-moon"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+          <svg class="icon icon--open" aria-hidden="true"><use href="#icon-menu"/></svg>
+          <svg class="icon icon--close" aria-hidden="true"><use href="#icon-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+
+        <div class="hero__copy">
+          <p class="status"><span class="status__dot" aria-hidden="true"></span>Open to internships in AI, machine learning, and data engineering</p>
+
+          <p class="hero__id">
+            <strong>Hamza Ibrahim</strong>
+            <span>Aspiring AI Engineer, Machine Learning Engineer, and Data Engineer</span>
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span>Building intelligent solutions</span>
+            <span>through data &amp; AI.</span>
+          </h1>
+
+          <p class="hero__lead">
+            Third-year Computer Science and Artificial Intelligence student at Helwan University.
+            I build data pipelines with Python and SQL, and I am developing machine learning skills
+            through training and projects, including a CNN image classifier and ensemble classification models.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">Explore My Work</a>
+            <a class="btn btn--ghost" href="assets/Hamza_Ibrahim_CV_AI_.pdf" download="Hamza_Ibrahim_CV.pdf">
+              <svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>
+              Download CV
+            </a>
+          </div>
+
+          <ul class="social" aria-label="Social links">
+            <li>
+              <a class="social__link" href="https://github.com/hamzaaaa-12" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+                <svg class="icon icon--fill" aria-hidden="true"><use href="#icon-github"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="https://www.linkedin.com/in/hamzaaibrahiim" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                <svg class="icon icon--fill" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <!--
+            YOUR PHOTO: save it as assets/images/hamza.jpg (about 800 x 1000 px, 4:5).
+            If that file is missing, a placeholder logo is shown instead.
+            Different file name? Change the src below.
+          -->
+          <figure class="hero-portrait">
+            <img class="portrait__img" src="assets/images/hamza.jpg"
+                 alt="Portrait of Hamza Ibrahim" width="800" height="1000" decoding="async">
+            <!-- <p class="network__chip network__chip--a"><span class="dot dot--blue" aria-hidden="true"></span>CNN classifier: 92.8% test accuracy</p>
+            <p class="network__chip network__chip--b"><span class="dot dot--violet" aria-hidden="true"></span>Ensemble models: 91–92% test accuracy</p> -->
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <h2 id="about-title">About me</h2>
+          <p class="section__lede">Two connected areas of focus: data engineering and machine learning.</p>
+        </div>
+
+        <div class="section__body">
+          <div class="prose" data-reveal>
+            <p>
+              I am a third-year Computer Science and Artificial Intelligence student at Helwan University,
+              working across data engineering and machine learning.
+            </p>
+            <p>
+              On the data side, I have used Python and SQL to build and maintain data pipelines, manage databases,
+              and design a data warehouse workflow. On the machine learning side, I am training at Route Academy and
+              building fundamentals through projects: a CNN image classifier and a comparison of ensemble models on tabular data.
+            </p>
+            <p>
+              I like projects where the result is something you can run and measure. I am looking for an internship in AI,
+              machine learning, or data engineering where I can keep learning on real problems.
+            </p>
+          </div>
+
+          <figure class="network network--wide" data-reveal role="img" aria-label="Illustration of signals passing through a small neural network with fifteen output nodes. One output node lights up after each pass.">
+            <canvas id="network" aria-hidden="true"></canvas>
+          </figure>
+
+          <dl class="facts" data-reveal>
+            <div class="facts__row">
+              <dt>Computer Science and AI</dt>
+              <dd>B.Sc. at Helwan University, 2024–2028. Grade: Very Good.</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Data engineering</dt>
+              <dd>Python, SQL, data pipelines, and data warehousing through the Digital Egypt Pioneers Initiative and the Student Churn project.</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Machine learning and deep learning</dt>
+              <dd>Supervised and unsupervised learning, ANNs, CNNs, and computer vision, practiced in Python with scikit-learn and TensorFlow/Keras.</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Real-world solutions</dt>
+              <dd>Projects range from image classification and ensemble models to a Java desktop application and a simulated WAN.</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Based in</dt>
+              <dd>Maadi, Cairo, Egypt. English (B2) and French (basic).</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <h2 id="skills-title">Technical skills</h2>
+          <p class="section__lede">Grouped by what I use them for. Each one appears in the training or projects below.</p>
+        </div>
+
+        <div class="section__body">
+          <div class="skills" data-stagger>
+
+            <article class="skill skill--3" data-reveal>
+              <h3>Machine learning and AI</h3>
+              <ul class="tags">
+                <li>Supervised learning</li>
+                <li>Unsupervised learning</li>
+                <li>Model evaluation</li>
+                <li>NLP</li>
+              </ul>
+            </article>
+
+            <article class="skill skill--3" data-reveal>
+              <h3>Data engineering and databases</h3>
+              <ul class="tags">
+                <li>SQL</li>
+                <li>Database management</li>
+                <li>Data pipelines</li>
+                <li>Data warehousing</li>
+                <li>Big data processing</li>
+              </ul>
+            </article>
+
+            <article class="skill skill--2" data-reveal>
+              <h3>Programming languages</h3>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+              </ul>
+            </article>
+
+            <article class="skill skill--2" data-reveal>
+              <h3>Deep learning and computer vision</h3>
+              <ul class="tags">
+                <li>ANN</li>
+                <li>CNN</li>
+                <li>Computer vision</li>
+              </ul>
+            </article>
+
+            <article class="skill skill--2" data-reveal>
+              <h3>Cloud and visualization</h3>
+              <ul class="tags">
+                <li>Microsoft Azure</li>
+                <li>Power BI</li>
+              </ul>
+            </article>
+
+            <article class="skill skill--4" data-reveal>
+              <h3>Python libraries</h3>
+              <ul class="tags">
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>scikit-learn</li>
+                <li>TensorFlow/Keras</li>
+                <li>XGBoost</li>
+              </ul>
+            </article>
+
+            <article class="skill skill--2" data-reveal>
+              <h3>Other</h3>
+              <ul class="tags">
+                <li>OOP</li>
+                <li>Problem solving</li>
+                <li>Prompt engineering</li>
+                <li>HTML / CSS / JavaScript (basic)</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <h2 id="experience-title">Experience</h2>
+          <p class="section__lede">Structured training programs in data engineering and machine learning.</p>
+        </div>
+
+        <div class="section__body">
+          <ol class="timeline">
+
+            <li class="timeline__item is-current" data-reveal>
+              <span class="timeline__marker" aria-hidden="true"></span>
+              <div class="timeline__card">
+                <p class="timeline__date">July 2026 – Present</p>
+                <h3>AI and Machine Learning Trainee</h3>
+                <p class="timeline__org">Route Academy</p>
+                <ul class="points">
+                  <li>Training in supervised and unsupervised learning, machine learning algorithms, and model evaluation.</li>
+                  <li>Studying deep learning, ANNs, computer vision with CNNs, and natural language processing.</li>
+                  <li>Practicing model implementation in Python with NumPy, Pandas, scikit-learn, and TensorFlow/Keras.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item" data-reveal>
+              <span class="timeline__marker" aria-hidden="true"></span>
+              <div class="timeline__card">
+                <p class="timeline__date">November 2025 – July 2026</p>
+                <h3>Data Engineer</h3>
+                <p class="timeline__org">Digital Egypt Pioneers Initiative (DEPI)</p>
+                <ul class="points">
+                  <li>Applied prompt engineering and studied applied AI techniques for AI-driven data engineering workflows.</li>
+                  <li>Performed SQL-based database management and query optimization.</li>
+                  <li>Built and maintained data pipelines for structured and unstructured data.</li>
+                  <li>Studied big data processing and completed training aligned with the Microsoft Azure Data Engineer Associate track.</li>
+                </ul>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <h2 id="projects-title">Featured projects</h2>
+          <p class="section__lede">Three machine learning and data projects first, then four from coursework in systems, web, Java, and networking.</p>
+        </div>
+
+        <div class="section__body">
+
+          <!--
+            PROJECT CARD NOTES
+            - Links: a card link with class "is-pending" and no href is a placeholder.
+              To activate it, add href="https://..." (plus target="_blank" rel="noopener noreferrer")
+              and delete the "is-pending" class and the aria-disabled attribute.
+            - Images: each featured card shows a diagram in .project__media. To use a screenshot
+              instead, replace the diagram with:
+              <img src="assets/images/your-file.webp" alt="Describe the image" width="1200" height="675" loading="lazy" decoding="async">
+          -->
+
+          <!-- Project 1: CNN -->
+          <article class="project project--featured" data-spotlight data-reveal>
+            <div class="project__media">
+              <div class="arch" role="img" aria-label="Network architecture: input image, three Conv2D and MaxPooling blocks, three dense layers, and 15 output classes.">
+                <div class="arch__stage" style="--i:0">
+                  <svg viewBox="0 0 56 72" aria-hidden="true">
+                    <rect x="8" y="8" width="40" height="56" rx="3"/>
+                    <path d="M8 26h40M8 44h40M28 8v56"/>
+                  </svg>
+                  <span>Input image</span>
+                </div>
+                <div class="arch__stage" style="--i:1">
+                  <svg viewBox="0 0 120 72" aria-hidden="true">
+                    <g>
+                      <rect x="4" y="12" width="26" height="48" rx="3"/>
+                      <rect x="8" y="8" width="26" height="48" rx="3"/>
+                    </g>
+                    <g>
+                      <rect x="46" y="20" width="22" height="34" rx="3"/>
+                      <rect x="50" y="16" width="22" height="34" rx="3"/>
+                    </g>
+                    <g>
+                      <rect x="84" y="28" width="18" height="20" rx="3"/>
+                      <rect x="88" y="24" width="18" height="20" rx="3"/>
+                    </g>
+                  </svg>
+                  <span>3 × Conv2D + MaxPooling</span>
+                </div>
+                <div class="arch__stage" style="--i:2">
+                  <svg viewBox="0 0 96 72" aria-hidden="true">
+                    <g>
+                      <circle cx="12" cy="16" r="4.5"/><circle cx="12" cy="36" r="4.5"/><circle cx="12" cy="56" r="4.5"/>
+                      <circle cx="48" cy="16" r="4.5"/><circle cx="48" cy="36" r="4.5"/><circle cx="48" cy="56" r="4.5"/>
+                      <circle cx="84" cy="10" r="4.5"/><circle cx="84" cy="24" r="4.5"/><circle cx="84" cy="38" r="4.5"/><circle cx="84" cy="52" r="4.5"/><circle cx="84" cy="64" r="2"/>
+                    </g>
+                  </svg>
+                  <span>3 dense layers</span>
+                </div>
+                <div class="arch__stage" style="--i:3">
+                  <svg viewBox="0 0 56 72" aria-hidden="true">
+                    <rect x="8" y="8" width="40" height="8" rx="2"/>
+                    <rect x="8" y="22" width="30" height="8" rx="2"/>
+                    <rect x="8" y="36" width="46" height="8" rx="2"/>
+                    <rect x="8" y="50" width="22" height="8" rx="2"/>
+                  </svg>
+                  <span>15 classes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project__body">
+              <h3>CNN image classification</h3>
+              <p class="project__sub">Vegetable image dataset, 15 classes</p>
+              <ul class="points">
+                <li>Prepared 15,000 training, 3,000 validation, and 3,000 test images with ImageDataGenerator (resize and rescale).</li>
+                <li>Built a Sequential CNN with 3 Conv2D/MaxPooling blocks and 3 dense layers, trained for 5 epochs with Adam and cross-entropy loss.</li>
+                <li>Evaluated accuracy and loss on the training, validation, and test sets.</li>
+              </ul>
+              <dl class="results">
+                <div><dt>Test accuracy</dt><dd>92.8%</dd></div>
+                <div><dt>Validation accuracy</dt><dd>93.2%</dd></div>
+              </dl>
+              <ul class="tags tags--sm">
+                <li>Python</li><li>TensorFlow/Keras</li><li>NumPy</li><li>Pandas</li><li>Matplotlib</li>
+              </ul>
+              <p class="project__links">
+                <!-- TODO: add your repository URL -->
+                <a class="proj-link is-pending" aria-disabled="true">Repository link coming soon</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 2: Dry Bean -->
+          <article class="project project--featured" data-spotlight data-reveal>
+            <div class="project__media">
+              <ol class="flow" aria-label="Project workflow">
+                <li class="flow__step" style="--i:0">
+                  <strong>Dataset</strong>
+                  <span>13,611 samples, 16 features, 7 classes</span>
+                </li>
+                <li class="flow__step" style="--i:1">
+                  <strong>Clean</strong>
+                  <span>68 duplicates removed, outliers clipped (IQR, Z-score)</span>
+                </li>
+                <li class="flow__step" style="--i:2">
+                  <strong>Prepare</strong>
+                  <span>Stratified 80/20 split, scaling, label encoding</span>
+                </li>
+                <li class="flow__step" style="--i:3">
+                  <strong>Compare</strong>
+                  <span>Decision trees, bagging, Random Forest, Gradient Boosting, XGBoost</span>
+                </li>
+                <li class="flow__step" style="--i:4">
+                  <strong>Evaluate</strong>
+                  <span>Classification reports and confusion matrices</span>
+                </li>
+              </ol>
+            </div>
+
+            <div class="project__body">
+              <h3>Ensemble learning for dry bean classification</h3>
+              <p class="project__sub">Tabular classification, 7 bean classes</p>
+              <ul class="points">
+                <li>Compared decision trees (default and GridSearchCV-tuned), bagging with SVC and decision trees, Random Forest, Gradient Boosting, and XGBoost.</li>
+                <li>Tuned n_estimators, max_features, learning rate, and subsample with GridSearchCV.</li>
+              </ul>
+              <dl class="results">
+                <div><dt>Ensemble test accuracy</dt><dd>91–92%</dd></div>
+                <div><dt>Single decision tree</dt><dd>90%</dd></div>
+              </dl>
+              <ul class="tags tags--sm">
+                <li>Python</li><li>scikit-learn</li><li>XGBoost</li><li>Pandas</li><li>NumPy</li><li>Seaborn</li>
+              </ul>
+              <p class="project__links">
+                <!-- TODO: add your repository URL -->
+                <a class="proj-link is-pending" aria-disabled="true">Repository link coming soon</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3: Student Churn -->
+          <article class="project project--featured" data-spotlight data-reveal>
+            <div class="project__media">
+              <ul class="stack" aria-label="Components used in the project">
+                <li class="stack__layer" style="--i:0">Python scripts</li>
+                <li class="stack__layer" style="--i:1">Database</li>
+                <li class="stack__layer" style="--i:2">Data warehouse</li>
+                <li class="stack__layer" style="--i:3">Automation</li>
+                <li class="stack__layer" style="--i:4">Power BI</li>
+              </ul>
+            </div>
+
+            <div class="project__body">
+              <h3>Student churn prediction</h3>
+              <p class="project__sub">Data engineering project</p>
+              <ul class="points">
+                <li>Developed a data engineering project for student churn analysis.</li>
+                <li>Used Python, SQL, data pipelines, and data warehousing.</li>
+                <li>Designed a structured data processing workflow.</li>
+                <li>Used Power BI for analytics and visualization.</li>
+              </ul>
+              <ul class="tags tags--sm">
+                <li>Python</li><li>SQL</li><li>Data pipelines</li><li>Data warehousing</li><li>Automation</li><li>Power BI</li>
+              </ul>
+              <p class="project__links">
+                <!-- TODO: add your repository URL -->
+                <a class="proj-link is-pending" aria-disabled="true">Repository link coming soon</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Projects 4-7 -->
+          <div class="projects-more" data-stagger>
+
+            <article class="project project--compact" data-spotlight data-reveal>
+              <h3>Smart Urban Parking System</h3>
+              <p class="project__sub">System architecture</p>
+              <p>Led the analysis, design, and implementation of a system architecture project.</p>
+              <p class="project__links">
+                <!-- TODO: add your repository or report URL -->
+                <a class="proj-link is-pending" aria-disabled="true">Link coming soon</a>
+              </p>
+            </article>
+
+            <article class="project project--compact" data-spotlight data-reveal>
+              <h3>E-Commerce Clothing Store</h3>
+              <p class="project__sub">Front-end web development</p>
+              <p>Built a responsive front-end website using HTML, CSS, and JavaScript.</p>
+              <ul class="tags tags--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <p class="project__links">
+                <!-- TODO: add your repository or live site URL -->
+                <a class="proj-link is-pending" aria-disabled="true">Link coming soon</a>
+              </p>
+            </article>
+
+            <article class="project project--compact" data-spotlight data-reveal>
+              <h3>Project Management System</h3>
+              <p class="project__sub">Java desktop application</p>
+              <p>Designed and developed an object-oriented desktop application in Java.</p>
+              <ul class="tags tags--sm"><li>Java</li><li>OOP</li></ul>
+              <p class="project__links">
+                <!-- TODO: add your repository URL -->
+                <a class="proj-link is-pending" aria-disabled="true">Link coming soon</a>
+              </p>
+            </article>
+
+            <article class="project project--compact" data-spotlight data-reveal>
+              <h3>Government Agency Network Simulation</h3>
+              <p class="project__sub">Networking</p>
+              <p>Designed and configured a multi-router WAN in Cisco Packet Tracer, including NAT/PAT and connectivity troubleshooting.</p>
+              <ul class="tags tags--sm"><li>Cisco Packet Tracer</li><li>WAN</li><li>NAT/PAT</li></ul>
+              <p class="project__links">
+                <!-- TODO: add your project file or report URL -->
+                <a class="proj-link is-pending" aria-disabled="true">Link coming soon</a>
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Certifications ============ -->
+    <<section class="section" id="certifications" aria-labelledby="certifications-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <h2 id="certifications-title">Certifications</h2>
+          <p class="section__lede">Courses and programs completed alongside university.</p>
+        </div>
+ 
+        <div class="section__body">
+                    <!--
+            CERTIFICATE IMAGES: save each one in assets/images/certificates/ using the file names
+            in the src attributes below (.jpg). Different name or format (.png, .webp)? Change the src.
+            If a file is missing, the placeholder icon is shown instead.
+          -->
+<ul class="certs" data-stagger>
+            <li class="cert" data-reveal>
+              <div class="cert__media">
+                <svg class="icon cert__ph" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <img class="cert__img" src="assets\images\ml_specialization.jpg"s
+                     alt="Certificate: Machine Learning Specialization, DeepLearning.AI" width="1200" height="850" loading="lazy" decoding="async">
+              </div>
+              <div class="cert__info">
+                <svg class="icon cert__icon" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <div>
+                  <h3>Machine Learning Specialization</h3>
+                  <p>DeepLearning.AI</p>
+                </div>
+              </div>
+            </li>
+            <li class="cert" data-reveal>
+              <div class="cert__media">
+                <svg class="icon cert__ph" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <img class="cert__img" src="assets\images\ibm_ai_developer.jpg"
+                     alt="Certificate: IBM AI Developer Professional Certificate, IBM" width="1200" height="850" loading="lazy" decoding="async">
+              </div>
+              <div class="cert__info">
+                <svg class="icon cert__icon" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <div>
+                  <h3>IBM AI Developer Professional Certificate</h3>
+                  <p>IBM</p>
+                </div>
+              </div>
+            </li>
+            <li class="cert" data-reveal>
+              <div class="cert__media">
+                <svg class="icon cert__ph" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <img class="cert__img" src="assets/images/DEPI.jpg"
+                     alt="Certificate: Data Engineering , DEPI" width="1200" height="850" loading="lazy" decoding="async">
+              </div>
+              <div class="cert__info">
+                <svg class="icon cert__icon" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <div>
+                  <h3>Data Engineering</h3>
+                  <p>DEPI</p>
+                </div>
+              </div>
+            </li>
+            <li class="cert" data-reveal>
+              <div class="cert__media">
+                <svg class="icon cert__ph" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <img class="cert__img" src="assets/images/microsoft x sprints.jpg"
+                     alt="Certificate: AI and Machine Learning, Sprints x Microsoft Summer Camp" width="1200" height="850" loading="lazy" decoding="async">
+              </div>
+              <div class="cert__info">
+                <svg class="icon cert__icon" aria-hidden="true"><use href="#icon-badge"/></svg>
+                <div>
+                  <h3>AI and Machine Learning</h3>
+                  <p>Sprints x Microsoft Summer Camp</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Education ============ -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <h2 id="education-title">Education</h2>
+        </div>
+
+        <div class="section__body">
+          <div class="edu" data-reveal>
+            <p class="edu__years">2024–2028</p>
+            <div>
+              <h3>Helwan University</h3>
+              <p class="edu__degree">B.Sc. in Computer Science and Artificial Intelligence</p>
+              <p class="edu__meta">Faculty of Computer Science and Artificial Intelligence, Cairo, Egypt</p>
+              <p class="edu__meta">Grade: Very Good</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <   <!-- ============ Contact ============ -->
+    <section class="section section--center" id="contact" aria-labelledby="contact-title">
+      <div class="container section__inner">
+        <div class="section__head">
+          <h2 class="title-gradient" id="contact-title">Contact Me</h2>
+          <p class="section__lede">Open to internships in AI, machine learning, and data engineering.</p>
+        </div>
+ 
+        <div class="contact" data-reveal>
+ 
+          <div class="contact__info">
+            <ul class="contact__rows">
+              <li class="contact__row">
+                <span class="contact__tile" aria-hidden="true"><svg class="icon"><use href="#icon-mail"/></svg></span>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:hamzaaaa12007@gmail.com">hamzaaaa12007@gmail.com</a>
+                </div>
+              </li>
+ 
+              <!--
+                PHONE (hidden on purpose, so your number is not public by default).
+                To show it, copy this block out of the comment and put your number in:
+                <li class="contact__row">
+                  <span class="contact__tile" aria-hidden="true"><svg class="icon"><use href="#icon-phone"/></svg></span>
+                  <div>
+                    <h3>Phone</h3>
+                    <a href="tel:+20XXXXXXXXXX">+20 XXX XXX XXXX</a>
+                  </div>
+                </li>
+              -->
+ 
+              <li class="contact__row">
+                <span class="contact__tile" aria-hidden="true"><svg class="icon"><use href="#icon-pin"/></svg></span>
+                <div>
+                  <h3>Address</h3>
+                  <p>Maadi, Cairo, Egypt</p>
+                </div>
+              </li>
+            </ul>
+ 
+            <ul class="contact__social" aria-label="Social links">
+              <li>
+                <a class="contact__social-link" href="https://www.linkedin.com/in/hamzaaibrahiim" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                  <svg class="icon icon--fill" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact__social-link" href="https://github.com/hamzaaaa-12" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+                  <svg class="icon icon--fill" aria-hidden="true"><use href="#icon-github"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+ 
+          <!-- Static site: the form opens the visitor's email app with the message filled in. -->
+          <form class="contact__form" id="contact-form" action="mailto:hamzaaaa12007@gmail.com" method="get" enctype="text/plain" data-to="hamzaaaa12007@gmail.com">
+            <label class="sr-only" for="contact-name">Your name</label>
+            <input class="field" id="contact-name" name="name" type="text" placeholder="Your Name" autocomplete="name" required>
+ 
+            <label class="sr-only" for="contact-email">Your email</label>
+            <input class="field" id="contact-email" name="email" type="email" placeholder="Your Email" autocomplete="email" required>
+ 
+            <label class="sr-only" for="contact-message">Your message</label>
+            <textarea class="field field--area" id="contact-message" name="body" rows="7" placeholder="Your Message" required></textarea>
+ 
+            <button class="contact__submit" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="#icon-send"/></svg>
+              Send Message
+            </button>
+          </form>
+ 
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__id">
+        <a class="brand" href="#top" aria-label="Hamza Ibrahim, back to top">
+          <img src="assets/icons/favicon.svg" width="28" height="28" alt="" loading="lazy">
+          <span>Hamza Ibrahim</span>
+        </a>
+        <p>&copy; <span id="year">2026</span> Hamza Ibrahim. All rights reserved.</p>
+      </div>
+
+      <ul class="social" aria-label="Social links">
+        <li>
+          <a class="social__link" href="https://github.com/hamzaaaa-12" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#icon-github"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="https://www.linkedin.com/in/hamzaaibrahiim" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="mailto:hamzaaaa12007@gmail.com" aria-label="Send an email">
+            <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+          </a>
+        </li>
+      </ul>
+
+      <a class="btn btn--ghost btn--sm" href="#top">
+        <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"/></svg>
+        Back to top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Floating back-to-top: appears after scrolling, hides near the footer -->
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
