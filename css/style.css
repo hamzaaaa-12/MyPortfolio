@@ -9,46 +9,16 @@
 
 /* 1. Tokens ---------------------------------------------------------------- */
 
+/* Palette: Cream #F3EEE3, Ink Black #111111, Burnt Orange #D9541E.
+   Cream is the default theme; the toggle switches to an ink-black version.
+   Orange is the only accent. --accent is a slightly deeper orange used for
+   small text so it stays readable; --brand is the exact brand orange. */
+
 :root {
-  color-scheme: dark;
-
-  /* Surfaces */
-  --bg: #070b16;
-  --bg-2: #0a1020;
-  --surface: #0e1527;
-  --surface-2: #141d36;
-
-  /* Text */
-  --text: #e8ecf7;
-  --text-2: #b4bdd6;
-  --muted: #8b95b0;
-
-  /* Lines */
-  --line: rgba(150, 170, 230, 0.14);
-  --line-strong: rgba(150, 170, 230, 0.3);
-
-  /* Accents. Blue is the main one, violet supports it.
-     Lime is reserved for "live / current" (status dot, current role, the lit output node). */
-  --accent: #6c93ff;
-  --accent-fill: #3d68f5;
-  --violet: #9b82ff;
-  --lime: #c6f24e;
-
-  /* Misc surfaces */
-  --glass: rgba(16, 24, 44, 0.62);
-  --glass-line: rgba(160, 180, 255, 0.18);
-  --tag-bg: rgba(150, 170, 230, 0.07);
-  --grid: rgba(120, 150, 255, 0.07);
-  --spot: rgba(108, 147, 255, 0.13);
-  --shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.7);
-
-  /* Neural network canvas (read by js/script.js) */
-  --net-edge: rgba(120, 150, 255, 0.17);
-  --net-node: #4a5a8c;
-
   /* Type */
-  --font-display: "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
 
   /* Layout */
   --maxw: 1180px;
@@ -64,35 +34,71 @@
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
+/* Cream (default) */
+:root,
 :root[data-theme="light"] {
   color-scheme: light;
 
-  --bg: #f4f6fb;
-  --bg-2: #ebeff8;
-  --surface: #ffffff;
-  --surface-2: #f0f3fa;
+  --bg: #f3eee3;
+  --bg-2: #ebe5d6;
+  --surface: #fbf8f1;
+  --surface-2: #f0eadc;
 
-  --text: #0b1020;
-  --text-2: #38425e;
-  --muted: #5a6580;
+  --text: #111111;
+  --text-2: #3d3a35;
+  --muted: #6b665d;
 
-  --line: rgba(20, 35, 90, 0.12);
-  --line-strong: rgba(20, 35, 90, 0.26);
+  --line: rgba(17, 17, 17, 0.12);
+  --line-strong: rgba(17, 17, 17, 0.28);
 
-  --accent: #2b55e6;
-  --accent-fill: #3d68f5;
-  --violet: #6a4de0;
-  --lime: #78b000;
+  --brand: #d9541e;
+  --accent: #b8430f;
+  --accent-fill: #c84a17;
+  --violet: #8c3a12;      /* secondary: deep rust */
+  --lime: #d9541e;        /* "current / live" signal uses the brand orange */
 
-  --glass: rgba(255, 255, 255, 0.72);
-  --glass-line: rgba(20, 35, 90, 0.14);
-  --tag-bg: rgba(20, 35, 90, 0.05);
-  --grid: rgba(30, 60, 160, 0.07);
-  --spot: rgba(43, 85, 230, 0.09);
-  --shadow: 0 24px 60px -30px rgba(20, 35, 90, 0.35);
+  --glass: rgba(251, 248, 241, 0.74);
+  --glass-line: rgba(17, 17, 17, 0.14);
+  --tag-bg: rgba(17, 17, 17, 0.05);
+  --grid: rgba(17, 17, 17, 0.055);
+  --spot: rgba(217, 84, 30, 0.1);
+  --shadow: 0 24px 50px -28px rgba(60, 40, 10, 0.4);
 
-  --net-edge: rgba(40, 70, 200, 0.18);
-  --net-node: #8d99bd;
+  --net-edge: rgba(17, 17, 17, 0.14);
+  --net-node: #8a857a;
+}
+
+/* Ink black */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #111111;
+  --bg-2: #171716;
+  --surface: #1b1b1a;
+  --surface-2: #242422;
+
+  --text: #f3eee3;
+  --text-2: #cfc8b8;
+  --muted: #9a9488;
+
+  --line: rgba(243, 238, 227, 0.12);
+  --line-strong: rgba(243, 238, 227, 0.28);
+
+  --brand: #d9541e;
+  --accent: #f0703a;
+  --accent-fill: #c84a17;
+  --violet: #ff9a66;
+  --lime: #f0703a;
+
+  --glass: rgba(27, 27, 26, 0.72);
+  --glass-line: rgba(243, 238, 227, 0.16);
+  --tag-bg: rgba(243, 238, 227, 0.06);
+  --grid: rgba(243, 238, 227, 0.05);
+  --spot: rgba(240, 112, 58, 0.12);
+  --shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.75);
+
+  --net-edge: rgba(243, 238, 227, 0.14);
+  --net-node: #6f6a5f;
 }
 
 
@@ -408,7 +414,13 @@ main:focus,
   letter-spacing: -0.035em;
 }
 .hero__title span { display: block; }
-.hero__title span:last-child { color: var(--text-2); }
+.hero__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: -0.015em;
+}
 
 .hero__lead {
   margin-top: 1.5rem;
@@ -442,14 +454,7 @@ main:focus,
 
 /* Neural network panel: the one memorable element on the page */
 .hero__visual { position: relative; }
-.hero__visual::before {
-  content: "";
-  position: absolute;
-  inset: 8% 4%;
-  background: radial-gradient(closest-side, color-mix(in srgb, var(--violet) 22%, transparent), transparent);
-  filter: blur(30px);
-  pointer-events: none;
-}
+.hero__visual::before { content: none; }
 
 .network {
   position: relative;
@@ -516,8 +521,19 @@ main:focus,
 /* Hero portrait (chips are positioned against this figure) */
 .hero-portrait {
   position: relative;
+  isolation: isolate;
   width: min(100%, 25rem);
   margin-left: auto;
+}
+/* Burnt-orange block offset behind the photo */
+.hero-portrait::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: var(--r-lg);
+  background: var(--brand);
+  transform: translate(0.9rem, 0.9rem);
 }
 .hero-portrait .portrait__img {
   border: 1px solid var(--glass-line);
@@ -878,10 +894,7 @@ a.proj-link:not(.is-pending) {
   font-size: clamp(2.2rem, 4.8vw, 3.4rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  background: linear-gradient(90deg, var(--violet), var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--text);
 }
 
 .contact {
@@ -902,7 +915,7 @@ a.proj-link:not(.is-pending) {
   border: 1px solid var(--line);
   border-radius: var(--r-md);
   background: var(--surface);
-  color: var(--violet);
+  color: var(--accent);
 }
 .contact__tile .icon { width: 1.6rem; height: 1.6rem; }
 .contact__row h3 { font-size: 1.05rem; letter-spacing: -0.01em; }
@@ -913,7 +926,7 @@ a.proj-link:not(.is-pending) {
   overflow-wrap: anywhere;
 }
 .contact__row a { transition: color 0.2s ease; }
-.contact__row a:hover { color: var(--violet); }
+.contact__row a:hover { color: var(--accent); }
 
 .contact__social { display: flex; gap: 0.75rem; margin-top: 2.5rem; }
 .contact__social-link {
@@ -928,7 +941,7 @@ a.proj-link:not(.is-pending) {
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 .contact__social-link .icon { width: 1.5rem; height: 1.5rem; }
-.contact__social-link:hover { color: var(--text); border-color: var(--violet); }
+.contact__social-link:hover { color: var(--text); border-color: var(--accent); }
 
 .contact__form { display: grid; gap: 1.25rem; align-content: start; }
 
@@ -946,8 +959,8 @@ a.proj-link:not(.is-pending) {
 .field:hover { border-color: var(--line-strong); }
 .field:focus {
   outline: none;
-  border-color: var(--violet);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--violet) 25%, transparent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
 }
 .field--area { min-height: 12rem; resize: vertical; }
 
@@ -960,7 +973,7 @@ a.proj-link:not(.is-pending) {
   padding: 1.15rem 1.5rem;
   border: 0;
   border-radius: var(--r-md);
-  background: linear-gradient(90deg, #5b3bf5, #9a58f0);
+  background: var(--accent-fill);
   color: #fff;
   font-size: 1.05rem;
   font-weight: 600;

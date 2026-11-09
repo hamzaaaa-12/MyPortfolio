@@ -30,8 +30,8 @@
 
   /* 1. Theme toggle ------------------------------------------------------ */
 
-  var THEME_KEY = 'portfolio-theme';
-  var THEME_COLORS = { dark: '#070B16', light: '#F4F6FB' };
+  var THEME_KEY = 'portfolio-theme-v2';
+  var THEME_COLORS = { dark: '#111111', light: '#F3EEE3' };
   var themeButton = $('#theme-toggle');
 
   function readStoredTheme() {
@@ -54,12 +54,12 @@
   }
 
   safe(function () {
-    // Dark is the primary theme; a visitor's saved choice wins.
-    applyTheme(readStoredTheme() === 'light' ? 'light' : 'dark', false);
+    // Cream is the default theme; a visitor's saved choice wins.
+    applyTheme(readStoredTheme() === 'dark' ? 'dark' : 'light', false);
 
     if (themeButton) {
       themeButton.addEventListener('click', function () {
-        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
         applyTheme(next, true);
       });
     }
@@ -318,7 +318,7 @@
 
   /* 8. Hero neural network ----------------------------------------------- */
   /* Signals travel through a small network. When one reaches the output
-     layer, that output node lights up (lime = "current / live"). The pointer
+     layer, that output node lights up (orange = "current / live"). The pointer
      brightens nearby nodes. It pauses off-screen and under reduced motion. */
 
   safe(function () {
@@ -349,6 +349,7 @@
       colors = {
         edge: get('--net-edge'),
         node: get('--net-node'),
+        ink: get('--text'),
         accent: get('--accent'),
         violet: get('--violet'),
         lime: get('--lime')
@@ -418,7 +419,7 @@
         segment: 0,
         t: 0,
         speed: 0.9 + Math.random() * 0.4,
-        color: Math.random() < 0.7 ? colors.accent : colors.violet
+        color: Math.random() < 0.7 ? colors.ink : colors.accent
       });
       path[0].energy = 1;
     }
